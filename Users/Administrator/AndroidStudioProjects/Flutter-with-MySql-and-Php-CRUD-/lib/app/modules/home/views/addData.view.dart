@@ -15,7 +15,7 @@ class _AddDataState extends State<AddData> {
   TextEditingController cemail = new TextEditingController();
   TextEditingController cpassword = new TextEditingController();
   void addData() {
-    var url = "http://192.168.1.35/php/myfolder/adddata.php";
+    var url = "http://192.168.1.56/php/myfolder/adddata.php";
     http.post(url, body: {
       "username": cusername.text,
       "email": cemail.text,

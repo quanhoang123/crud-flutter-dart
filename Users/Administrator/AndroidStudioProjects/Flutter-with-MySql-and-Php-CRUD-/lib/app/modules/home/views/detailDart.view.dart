@@ -16,7 +16,7 @@ class DetailsUser extends StatefulWidget {
 
 class _DetailsUserState extends State<DetailsUser> {
   void delete() {
-    var url = "http://192.168.1.35/php/myfolder/deletedata.php";
+    var url = "http://192.168.1.56/php/myfolder/deletedata.php";
     http.post(url, body: {
       'id': widget.list[widget.index]['id'],
     });

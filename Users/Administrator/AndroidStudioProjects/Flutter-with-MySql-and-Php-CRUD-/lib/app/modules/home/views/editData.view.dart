@@ -18,7 +18,7 @@ class _EditUserState extends State<EditUser> {
   TextEditingController cpassword;
   TextEditingController cemail;
   void editData() {
-    var url = "http://192.168.1.35/php/myfolder/editdata.php";
+    var url = "http://192.168.1.56/php/myfolder/editdata.php";
     http.post(url, body: {
       'id': widget.list[widget.index]['id'],
       'username': cusername.text,

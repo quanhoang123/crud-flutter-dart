@@ -25,7 +25,7 @@ class Home extends StatefulWidget {
 }
 
 Future<List> getData() async{
-    final response = await http.get(Uri.parse("http://192.168.1.35/php/myfolder/getdata.php"));
+    final response = await http.get(Uri.parse("http://192.168.1.56/php/myfolder/getdata.php"));
     debugPrint('${response.statusCode}');
   //  final data = await json.decode(responce.body.toString());
   if (response.statusCode == 200) {
